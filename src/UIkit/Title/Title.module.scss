@@ -1,0 +1,31 @@
+
+
+.cursor {
+	cursor: default;
+}
+
+.large {
+	font: var(--font-l);
+	color: var(--text-color);
+	@media(max-width: 400px){
+		font: var(--font-m);
+		
+	}
+}
+
+.medium {
+	font: var(--font-m);
+	color: var(--text-color);
+	@media(max-width: 400px){
+		font: var(--font-s);
+	}
+}
+
+.small {
+	font: var(--font-s);
+	color: var(--text-color);
+}
+
+.primary {
+	color: var(--primary-color);
+}

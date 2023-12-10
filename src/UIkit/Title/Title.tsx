@@ -10,15 +10,7 @@ export const Title = ({ styles, tag = 'medium', children, variation, ...props }:
 	}
 
 	switch (tag) {
-		case 'very-large':
-			return (
-				<h1
-					className={cn(classes.very_large, [styles, classes.cursor], styleMod)}
-					{...props}
-				>
-					{children && children}
-				</h1>
-			)
+
 
 		case 'large':
 			return (
@@ -50,16 +42,6 @@ export const Title = ({ styles, tag = 'medium', children, variation, ...props }:
 				</h3>
 			)
 
-		case 'very-small':
-			return (
-				<h3
-					className={cn(classes.very_small, [styles, classes.cursor])}
-					{...props}
-				>
-					{children}
-				</h3>
-			)
-
 		default:
 			return <></>
 	}
@@ -67,6 +49,6 @@ export const Title = ({ styles, tag = 'medium', children, variation, ...props }:
 
 interface ITitleProps extends DetailedHTMLProps<HtmlHTMLAttributes<HTMLDivElement>, HTMLDivElement> {
 	styles?: string
-	tag: 'large' | 'medium' | 'small' | 'very-small' | 'very-large'
+	tag: 'large' | 'medium' | 'small'
 	variation?: 'primary' | 'inverted-secondary'
 }

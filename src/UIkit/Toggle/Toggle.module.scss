@@ -1,0 +1,44 @@
+.toggle_wrapper{
+    display: flex;
+    
+    @media (max-width:400px){
+    font-size: 15px;
+    }
+    
+   
+}
+
+.input {
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.lable{
+    display: flex;
+    justify-content: center;
+
+    padding: 5px 15px;
+    cursor:pointer;
+    border:1px solid var(--description-text);
+
+
+    @media (max-width:780px){
+       padding:  5px 5px;
+    }
+}
+
+.last_label{
+    border-radius :0px 15px 15px 0;
+}
+
+.first_label{
+    padding-right: 8px;
+    border-radius :15px 0px 0px 15px;
+
+}
+
+.selected{
+    background: var(--primary-color);
+}

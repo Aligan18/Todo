@@ -1,0 +1,29 @@
+.button{
+    
+   
+    padding: 10px;
+    background: #edeef0;
+    border:none;
+    border-radius: 15px;
+    &:hover{
+        background: var(--primary-color);
+    }
+}
+
+.small{
+    width: 200px;
+     font: var(--font-s);
+     height: 45px;
+}
+
+.medium{
+      width: 300px;
+     font: var(--font-m);
+     height: 55px;
+
+     @media (max-width: 450px){
+         width: 200px;
+        font: var(--font-s);
+        height: 45px;
+     }
+}
