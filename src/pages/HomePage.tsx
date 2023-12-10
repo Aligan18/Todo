@@ -79,7 +79,7 @@ export const HomePage = () => {
                 <Button onClick={() => setOpenAddTodoModal(true)} styleClass={classes.add_button}>Add Todo</Button>
                 <Button onClick={() => sendCompletedTodo(onlyCompletedTasks)}>Send Todo </Button>
             </div>
-            {error && <div className={classes.error}><ErrorText>{error.error}</ErrorText></div>}
+            {error && 'error' in error && <div className={classes.error}><ErrorText>{error.error}</ErrorText></div>}
 
             {openAddTodoModal && <AddTodoModal closeHandler={closeHandler} />}
         </main>

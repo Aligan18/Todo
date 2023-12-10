@@ -14,7 +14,7 @@ import { addTodoAction } from '../../store/TodoSlice/slice'
 
 export const AddTodoModal: FC<IAddTodoModalProps> = ({ closeHandler }) => {
 
-    const [error, setError] = useState(null)
+    const [error, setError] = useState<string | null>(null)
     const dispatch = useAppDispatch()
 
     const handleAddTodo = (e: React.FormEvent<HTMLFormElement>) => {
