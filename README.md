@@ -1,30 +1,98 @@
-# React + TypeScript + Vite
+<summary><h1>✔️ Todo</h1></summary>
+<h2></h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<h3>✏️ Описание</h3>
+      <strong>Todo</strong> - сайт представляет собой список дел. Данный сайт является решением тестового задания от компании ARC TEACH
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>:clipboard: Сайт</h3>
+Посетите сайт: https://todo-lilac-zeta.vercel.app/
 
-## Expanding the ESLint configuration
+<h1></h1>
+<summary><h2>💼 Стек технологий</h2></summary>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+<table>
+<tr>
+<td><strong>Frontend</strong></td>  
+</tr>
+<tr>
+<td>React</td>  
+</tr>
+<tr>
+<td>Typescript</td>  
+</tr>
+<tr>
+<td>Redux</td>  
+</tr>
+<tr>
+<td>Redux toolkit</td>  
+</tr>
+<tr>
+<td>RTK query</td>  
+</tr>
+<tr>
+<td>Scss</td> 
+</tr>
+<tr>
+<td>Vite</td> 
+</tr>
+</table> 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<h2></h2>
+<details><summary><strong>✨ Screenshots</strong></summary>
+<!-- | ![Главная страница](/pictures/Главная.jpg "Главная страница") | | :--: | | *Главная страница* |
+| ![Курсы](/pictures/Курсы.jpg "Курсы") | | :--: | | *Курсы* |
+| ![Страница редактирования ](/pictures/Редактирование.jpg "Страница редактирования") | | :--: | | *Страница редактирования* |
+| ![Темная тема](/pictures/Темная_тема.jpg "Темная тема") | | :--: | | *Темная тема* |
+| ![Светлая тема](/pictures/Светлая_тема.jpg "Светлая тема") | | :--: | | *Светлая тема* | -->
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+</details>
+<h2></h2>
+
+
+
+<summary><h2>:dizzy: Функционал</h2></summary>
+
+- Весь нижеперечисленный функционал работает с redux хранилищем. Счетчик, статус задач и т.д.
+- Адаптивный дизайн
+- Добавление новой задачи
+- Добавление описания для каждой задачи
+- Новая задача добавляется с условием что ее длинна меньше или равна 30
+- Отображение списка добавленных записей
+- Переключение статуса записи любым способом, Выполнено/В работе/Ожидание
+- Фильтрация по статусу на toggle кнопку
+- Отображение счетчика выполненных задач
+- Шаблон RTK query запроса для отправки выполненых задач
+- Шаблон createAsyncThunk для отправки выполненых задач
+
+
+<h2></h2>
+<summary><h2>🛠️ Установка</h2></summary>
+
+
+
+1. Сделайте Fork проекта. Нажмите на значок Fork в правом верхнем углу, чтобы начать.
+
+2. Клонировать проект можно с помощью следующей команды:
+  
+      ~~~
+      https://github.com/Aligan18/Todo.git
+      ~~~
+
+3. Перейдите в каталог проекта
+
+      ~~~
+      Todo
+      ~~~
+      
+4. Установите зависимости с помощью npm install
+      ~~~
+      npm install // для клиента 
+      ~~~
+
+5. Запустите скрипт
+      ~~~
+      npm run dev
+      ~~~
+
